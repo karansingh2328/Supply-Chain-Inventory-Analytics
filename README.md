@@ -1,58 +1,86 @@
 # Supply Chain & Inventory Analytics
 
-An end-to-end data analytics project analyzing supply chain, sales, profitability, customer behavior, product performance, discounts, and delivery operations using **SQL, Python, Excel, and Power BI**.
+An end-to-end retail supply chain analytics project focused on analyzing **sales, profitability, customers, products, discounts, regions, and shipping performance** to identify business problems and support data-driven decision-making.
 
-The project follows a complete analytics workflow:
-
-**Business Understanding → Data Cleaning → Feature Engineering → SQL Analysis → Python EDA → Excel Analysis → Power BI Dashboard → Business Insights**
+The project follows a complete analytics workflow from raw data preparation to business analysis and interactive dashboard reporting.
 
 ---
 
 ## 📌 Project Overview
 
-This project analyzes a global retail supply chain dataset to identify business problems and generate actionable insights related to:
+Retail businesses operate across multiple products, customers, markets, and regions, making it important to understand where sales and profit are growing, declining, or remaining stagnant.
 
-- Sales performance
-- Profitability
-- Customer segments
-- Product performance
-- Regional performance
-- Discounts
+This project analyzes the **Global Superstore / DataCo supply chain dataset** to investigate:
+
+- Sales performance and trends
+- Profitability and profit declines
+- Product and category performance
+- Customer segment performance
+- Regional and country performance
+- Discount patterns and their relationship with sales and profit
 - Shipping and delivery performance
-- Sales and profit trends
-- Underperforming products and regions
+- Stagnant and declining business areas
 
-The objective is to understand **why sales or profit decline, where performance is weak, how discounts affect sales and profit, and which operational areas require improvement.**
+The goal is to transform raw transactional data into meaningful business insights that can help improve **revenue, profitability, customer experience, and operational efficiency**.
 
 ---
 
 ## 🎯 Business Objectives
 
-The analysis focuses on the following business objectives:
+The analysis focuses on answering the following business objectives:
 
-- Increase profit while minimizing unnecessary discounts
+- Increase profit while minimizing unnecessary discounting
 - Identify regions and countries with weak sales performance
 - Identify products and categories generating low or negative profit
 - Understand customer segment performance
-- Analyze sales and profit trends over time
-- Identify regions with declining or stagnant sales
-- Analyze shipping and delivery performance
-- Identify opportunities for improving customer satisfaction
-- Support data-driven business decision-making
+- Identify declining and stagnant sales trends
+- Understand changes in profitability over time
+- Analyze the relationship between discounts, sales, and profit
+- Identify regions and countries with longer shipping times
+- Improve operational and customer experience through delivery analysis
 
 ---
 
-## 👥 Stakeholders
+## ❓ Key Business Questions
 
-The analysis is designed to support:
+### Sales Performance
 
-| Stakeholder | Business Focus |
-|---|---|
-| CEO | Overall business performance |
-| Sales Manager | Sales trends and regional performance |
-| Marketing Manager | Customer and segment behavior |
-| Finance Manager | Profitability, discounts, and margins |
-| Operations Manager | Shipping and delivery performance |
+- When did sales start declining?
+- Which region experienced the largest month-over-month sales decline?
+- Which product category experienced the greatest sales decline?
+- Which customer segment experienced the greatest decline in sales?
+- Which regions have experienced stagnant sales?
+- Which products have experienced stagnant sales?
+- How much did sales decline compared with the previous month?
+- Which regions generate the lowest revenue?
+
+### Profitability
+
+- Which regions generate the highest and lowest profit?
+- Which region experienced the greatest decline in profit?
+- Which product category experienced the greatest decline in profit?
+- Which month recorded the largest decline in profit?
+- Which products generate low or negative profit?
+- Which product categories generate the lowest profit?
+- Which regions contribute the least profit from underperforming products?
+- For how many consecutive months have low- or negative-profit products continued to underperform?
+
+### Discount Analysis
+
+- How has the average discount changed year over year?
+- Which product category requires the highest average discount?
+- Which region requires the highest average discount?
+- Is higher discounting associated with higher sales?
+- Is higher discounting associated with higher profit?
+- Is declining profit associated with higher discounts?
+
+### Shipping & Operations
+
+- How has average shipping time changed year over year?
+- Which region has the longest average shipping time?
+- Which customer segment experiences the longest shipping time?
+- Which countries have the longest average shipping time?
+- How does delivery performance vary across regions and customer segments?
 
 ---
 
@@ -64,103 +92,23 @@ The analysis is designed to support:
 
 ### Dataset Size
 
-- **Rows:** 51,291
-- **Columns:** 26
-- **Time Period:** 2011–2014
-- **Countries:** 147
-- **Regions:** 13
-- **States:** 1,094
-- **Cities:** 3,636
-- **Customer Segments:** 3
-- **Categories:** 3
-- **Sub-Categories:** 17
-- **Unique Customers:** 4,873
-- **Unique Product Names:** 3,788
-- **Unique Product IDs (SKUs):** 10,292
+| Metric | Value |
+|---|---:|
+| Rows | 51,291 |
+| Columns | 26 |
+| Countries | 147 |
+| Regions | 13 |
+| States | 1,094 |
+| Cities | 3,636 |
+| Customer Segments | 3 |
+| Categories | 3 |
+| Sub-Categories | 17 |
+| Unique Customers | 4,873 |
+| Unique Product Names | 3,788 |
+| Unique Product IDs (SKUs) | 10,292 |
+| Time Period | 2011–2014 |
 
-The dataset contains more Product IDs than Product Names, indicating that the same product name can be associated with multiple SKU-level records.
-
-For product-performance analysis, **Product Name** is primarily used, while **Product ID** can be used for SKU-level analysis.
-
----
-
-## 🔍 Key Business Questions
-
-The project answers business questions such as:
-
-### Sales Analysis
-
-- When did sales start declining?
-- Which regions experienced the largest month-over-month sales decline?
-- Which product categories experienced the greatest sales decline?
-- Which customer segment experienced the greatest decline?
-- Which regions have stagnant sales?
-- Which products have experienced stagnant sales?
-
-### Profit Analysis
-
-- Which regions generate the highest and lowest profit?
-- Which regions experienced the greatest decline in profit?
-- Which product categories generate the lowest profit?
-- Which products generate low or negative profit?
-- Which months recorded the largest profit decline?
-
-### Discount Analysis
-
-- How has the average discount changed year over year?
-- Which product category requires the highest average discount?
-- Which regions require the highest discounts?
-- Is higher discounting associated with higher sales?
-- Is higher discounting associated with higher profit?
-
-### Shipping Analysis
-
-- How has average shipping time changed year over year?
-- Which regions have the longest average shipping time?
-- Which customer segments experience the longest shipping time?
-- Which countries have the longest average shipping time?
-
----
-
-## 🛠️ Tools & Technologies
-
-### SQL
-- PostgreSQL
-- CTEs
-- Window Functions
-- `LAG()`
-- `DATE_TRUNC()`
-- Aggregations
-- Subqueries
-- Ranking
-- Time-series analysis
-
-### Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Data Cleaning
-- Feature Engineering
-- Exploratory Data Analysis
-- Correlation Analysis
-
-### Excel
-- Data analysis
-- Pivot Tables
-- Charts
-- KPI analysis
-- Trend analysis
-- Business reporting
-
-### Power BI
-- Data modeling
-- DAX
-- KPI cards
-- Interactive dashboards
-- Time-series analysis
-- Drill-down analysis
-- Business performance reporting
+The dataset contains **3,788 unique product names** but **10,292 unique Product IDs**. Therefore, Product Name is primarily used for product-level business analysis, while Product ID can be used for SKU-level analysis.
 
 ---
 
@@ -168,17 +116,26 @@ The project answers business questions such as:
 
 ```text
 Raw Data
-   ↓
+   │
+   ▼
+Data Quality Assessment
+   │
+   ▼
 Data Cleaning
-   ↓
+   │
+   ▼
 Feature Engineering
-   ↓
-SQL Business Analysis
-   ↓
-Python EDA
-   ↓
-Excel Analysis
-   ↓
-Power BI Dashboard
-   ↓
-Business Insights & Recommendations
+   │
+   ├──────────────┐
+   ▼              ▼
+ SQL Analysis   Python EDA
+   │              │
+   └───────┬──────┘
+           ▼
+      Excel Analysis
+           │
+           ▼
+      Power BI Dashboard
+           │
+           ▼
+   Business Insights
