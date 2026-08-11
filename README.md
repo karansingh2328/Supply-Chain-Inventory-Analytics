@@ -220,7 +220,7 @@ The cleaned dataset contains no remaining missing values and no duplicate record
 
 ### Discount Analysis
 
-![Discount Analysis](images/Discount%20Page.png)
+![Discount Analysis](https://github.com/karansingh2328/Supply-Chain-Inventory-Analytics/blob/main/images/Discount%20Page.png)
 
 ---
 
