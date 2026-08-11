@@ -139,3 +139,16 @@ Feature Engineering
            │
            ▼
    Business Insights
+
+---
+
+## 👤 Author
+
+**Karan Singh**
+
+Aspiring Data Analyst
+
+**Tools:** SQL | Python | Excel | Power BI
+
+- 🔗 GitHub: https://github.com/karansingh2328
+- 🔗 LinkedIn: https://www.linkedin.com/in/karansingh2328/
