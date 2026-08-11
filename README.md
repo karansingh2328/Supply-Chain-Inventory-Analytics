@@ -126,7 +126,7 @@ Aspiring Data Analyst
 **Tools:** SQL | Python | Excel | Power BI
 
 **GitHub:** https://github.com/karansingh2328  
-**LinkedIn:** YOUR_LINKEDIN_URL
+**LinkedIn:** https://www.linkedin.com/in/karansingh2328/
 
 ---
 
