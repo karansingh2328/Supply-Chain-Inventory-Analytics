@@ -244,10 +244,6 @@ Aspiring Data Analyst
 
 **GitHub:** https://github.com/karansingh2328
 
-**LinkedIn:** YOUR_LINKEDIN_URL
+**LinkedIn:** https://www.linkedin.com/in/karansingh2328/
 
 ---
-
-│
-├── .gitattributes
-└── README.md
